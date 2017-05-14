@@ -24,6 +24,7 @@ wss.on('connection', function connection(ws) {
     // or ws.upgradeReq.headers.cookie (see http://stackoverflow.com/a/16395220/151312)
     console.log('Connection established');
     msgInput();
+    ws.send('Hello, welcome to the group chat.');
     // console.log(ws);
 
     function msgInput(){
